@@ -1,9 +1,14 @@
 import javax.swing.JOptionPane;
 
 public class Persona{
-  private nombre;
-  public String Apellidos;
+  private String nombre;
+  private String apellidos;
+  private String dni;
+  private String ciudad;
   private String sexo;
+
+
+
 
   public Persona(){
     this.persona="Desconocido.";
@@ -14,22 +19,61 @@ public class Persona{
         this.sexo="s/n";
   	
   }
-
-
-
+  public Persona(String dni,String nombre,String apellido
+  ,String ciudad,String fechaNacimiento)
+        this.nombre = nombre;
+        this.dni = dni;
+        this.apellido = apellido;
+        this.ciudad = ciudad;
+        this.fechaNacimiento = fechaNacimiento;
+  	
+  }
 
   private String nombre;
   private String sexo;
+
   
   public Persona(){
     this.persona="Desconocido.";
   }
 
-  public Apellidos(String apellidoNuevo){
+  public void nombreCompleto (){
+  	return "Nombre completo: "+this.nombre+" "+this.apellido;
+  public Apellidos(String apellidoNuev){
     this.Apellidos = this.apellidoNuevo;
 
   }
   
+  //@Jhil
+  public class int calcularEdad(String fechaNacimiento){
+    String dias = fechaNacimiento.substring(0,1);
+    String mes = fechaNacimiento.substring(3,4);
+    String anio = fechaNacimiento.substring(6,9);
+
+    Calendar fechaActual = Calendar.getInstance();
+
+    int years = fechaActual.get(Calendar.YEAR) - ((int)anio);
+    int months = fechaActual.get(Calendar.MONTH) - ((int)mes);
+    int days = fechaActual.get(Calendar.DAY_OF_MONTH) - ((int)dias);
+ 
+        // Hay que comprobar si el día de su cumpleaños es posterior
+        // a la fecha actual, para restar 1a la diferencia de años
+ 
+    if(months < 0 // Aún no es el mes de su cumpleaños
+        || (months==0 && days < 0)) { // o es el mes pero no ha llegado el día.
+        years--;
+    }
+    return years;
+  }
+
+  public Persona(String nombre, String apellidos, String dni, String ciudad){
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+    this.dni = dni;
+    this.ciudad = ciudad;
+
+  }
+
   public void determinarSexo(){
 
     JOptionPane.showMessageDialog(null, "Determinar el sexo de una persona");
@@ -45,18 +89,18 @@ public class Persona{
     }
   }
 
-  //imprimir clase completo
-  public String toString() {
-      return "nombre: "+this.nombre, "Sexo: "+this.sexo;
+  public String nombreCompleto(){
+
+    JOptionPane.showMessageDialog(null, "Nombre: "+nombre+" Sexo: "+sexo);
+
   }
 
-}
+  //imprimir clase completo
+  public String toString() {
+      return "DNI: "+this.dni, "Nombre: "+this.nombre,"Apellido"+ this.apellido,"Sexo: "+this.sexo,
+      "Ciudad: "+this.ciudad, "Fecha de nacimeinto: "+this.fechaNacimiento ;
+  }
 
-
-
-//imprimir clase completo
-public String toString() {
-    return "nombre: "+this.nombre;
 }
 
 //Agregar persona vecinas
