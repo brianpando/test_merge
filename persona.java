@@ -102,12 +102,15 @@ public class Persona{
 
 }
 
+//JESSE
 import java.util.Scanner;
 
 boolean CalcularMayorEdad(){
 boolean respuesta;
 Scanner dato = new Scanner(System.in);
 int edad=0;
+System.out.printl("ALANYA ESTUVO AQUII!!/n");
+
 System.out.println("ingrese su edad: ");
 edad = dato.nextInt();
 if(edad<18){
@@ -119,6 +122,16 @@ else
 
 return respuesta;
 }
+
+//ALANYA
+String nombreCompleto, nombre, apellido, espacio;
+nombreCompleto = "Shaoran Da Silva";
+espacio = " ";
+nombre = nombreCompleto.substring(0,nombreCompleto.indexOf(espacio));
+apellido = nombreCompleto.substring(nombreCompleto.indexOf(espacio)+1,nombreCompleto.length());
+System.out.println("Nombre Completo: " + nombreCompleto);
+System.out.println("Nombre: " + nombre);System.out.println("Apellido: " + apellido);System.out.println("Su apellido tiene " + apellido.length() + " 
+letras");
 
 //Agregar persona vecinas
 public void personaVecina(String ves){
