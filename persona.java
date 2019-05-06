@@ -19,15 +19,34 @@ public class Persona{
         this.sexo="s/n";
   	
   }
+  public Persona(String dni,String nombre,String apellido
+  ,String ciudad,String fechaNacimiento)
+        this.nombre = nombre;
+        this.dni = dni;
+        this.apellido = apellido;
+        this.ciudad = ciudad;
+        this.fechaNacimiento = fechaNacimiento;
+  	
+  }
+
+
+
+  private String nombre;
+  private String sexo;
 
   
   public Persona(){
     this.persona="Desconocido.";
   }
 
+<<<<<<< HEAD
+  public void nombreCompleto (){
+  	return "Nombre completo: "+this.nombre+" "+this.apellido;
+=======
   public Apellidos(String apellidoNuevo){
     this.Apellidos = this.apellidoNuevo;
 
+>>>>>>> bdfef540734ce812c937c991b4c3440a6811eb6d
   }
   
 <<<<<<< HEAD
