@@ -28,7 +28,7 @@ public class Persona{
         this.fechaNacimiento = fechaNacimiento;
   	
   }
-  
+
   private String nombre;
   private String sexo;
 
@@ -44,8 +44,6 @@ public class Persona{
 
   }
   
-<<<<<<< HEAD
-<<<<<<< HEAD
   //@Jhil
   public class int calcularEdad(String fechaNacimiento){
     String dias = fechaNacimiento.substring(0,1);
@@ -68,8 +66,6 @@ public class Persona{
     return years;
   }
 
-=======
-=======
   public Persona(String nombre, String apellidos, String dni, String ciudad){
     this.nombre = nombre;
     this.apellidos = apellidos;
@@ -77,7 +73,7 @@ public class Persona{
     this.ciudad = ciudad;
 
   }
->>>>>>> c2846c6ec3ef3d5ed130602fe5ddc90cb07e7e0f
+
   public void determinarSexo(){
 
     JOptionPane.showMessageDialog(null, "Determinar el sexo de una persona");
@@ -113,7 +109,4 @@ public void personaVecina(String ves){
     System.out.println(this.vecinas);
     
   }
->>>>>>> 60b559f746bae0adb605eb2ac788efc782a4e2e4
-
-:wq
 }
