@@ -6,3 +6,8 @@ public class Persona{
   }
   
 }
+
+//imprimir clase completo
+public String toString() {
+    return "nombre: "+this.nombre;
+}
