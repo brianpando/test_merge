@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+import java.util.calendar;
+import java.util.GregorianCalendar;
+=======
 import javax.swing.JOptionPane;
+>>>>>>> 1751cfc2535b153dbc81cbe41360bad92549e326
 
 public class Persona{
   private String nombre;
@@ -140,4 +145,9 @@ public void personaVecina(String ves){
     System.out.println(this.vecinas);
     System.out.println("Modif");
   }
+}
+// agregar porsona Constructor
+public void personaConstructor(String Cons ){
+if(this.Constructor == Cons )
+System.out.println(this.Constructor)
 }
