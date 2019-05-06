@@ -93,6 +93,28 @@ public class Persona{
 
 }
 
+import java.util.Scanner;
+
+boolean CalcularMayorEdad(){
+boolean respuesta;
+Scanner dato = new Scanner(System.in);
+int edad=0;
+System.out.println("ingrese su edad: ");
+edad = dato.nextInt();
+if(edad<18){
+JOptionPane.showMessageDialog(null, "Es menor de edad ");
+respuesta=false;
+else
+  {JOptionPane.showMessageDialog(null, "Es mayor de edad");
+   respuesta=true;}
+
+return respuesta;
+}
+
+
+
+
+
 //Agregar persona vecinas
 public void personaVecina(String ves){
   if(this.vecinas == ves){
