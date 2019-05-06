@@ -110,6 +110,7 @@ boolean respuesta;
 Scanner dato = new Scanner(System.in);
 int edad=0;
 System.out.printl("ALANYA ESTUVO AQUII!!/n");
+System.out.printl("SEGUNDO MENSAJE ALANYA!!!/n");
 
 System.out.println("ingrese su edad: ");
 edad = dato.nextInt();
