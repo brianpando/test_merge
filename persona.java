@@ -13,7 +13,7 @@ public class Persona{
     this.nombre = nombre;
     this.apellidos = apellidos;
     this.dni = dni;
-    this.ciudad;
+    this.ciudad = ciudad;
 
   }
 }
