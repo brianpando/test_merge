@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import java.util.calendar;
-import java.util.GregorianCalendar;
-=======
 import javax.swing.JOptionPane;
->>>>>>> 60b559f746bae0adb605eb2ac788efc782a4e2e4
 
 public class Persona{
   private String nombre;
@@ -24,19 +19,31 @@ public class Persona{
         this.sexo="s/n";
   	
   }
+  public Persona(String dni,String nombre,String apellido
+  ,String ciudad,String fechaNacimiento)
+        this.nombre = nombre;
+        this.dni = dni;
+        this.apellido = apellido;
+        this.ciudad = ciudad;
+        this.fechaNacimiento = fechaNacimiento;
+  	
+  }
+
+  private String nombre;
+  private String sexo;
 
   
   public Persona(){
     this.persona="Desconocido.";
   }
 
+  public void nombreCompleto (){
+  	return "Nombre completo: "+this.nombre+" "+this.apellido;
   public Apellidos(String apellidoNuevo){
     this.Apellidos = this.apellidoNuevo;
 
   }
   
-<<<<<<< HEAD
-<<<<<<< HEAD
   //@Jhil
   public class int calcularEdad(String fechaNacimiento){
     String dias = fechaNacimiento.substring(0,1);
@@ -60,8 +67,6 @@ public class Persona{
     return years;
   }
 
-=======
-=======
   public Persona(String nombre, String apellidos, String dni, String ciudad){
     this.nombre = nombre;
     this.apellidos = apellidos;
@@ -69,7 +74,7 @@ public class Persona{
     this.ciudad = ciudad;
 
   }
->>>>>>> c2846c6ec3ef3d5ed130602fe5ddc90cb07e7e0f
+
   public void determinarSexo(){
 
     JOptionPane.showMessageDialog(null, "Determinar el sexo de una persona");
@@ -83,6 +88,12 @@ public class Persona{
     }else if (sexo != "si" && sexo != "no"){
       JOptionPane.showMessageDialog(null, "ERES RARITO!!");
     }
+  }
+
+  public String nombreCompleto(){
+
+    JOptionPane.showMessageDialog(null, "Nombre: "+nombre+" Sexo: "+sexo);
+
   }
 
   //imprimir clase completo
@@ -121,5 +132,4 @@ public void personaVecina(String ves){
     System.out.println(this.vecinas);
     
   }
->>>>>>> 60b559f746bae0adb605eb2ac788efc782a4e2e4
 }
