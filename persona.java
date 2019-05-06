@@ -127,6 +127,7 @@ return respuesta;
 String nombreCompleto, nombre, apellido, espacio;
 nombreCompleto = "Shaoran Da Silva";
 espacio = " ";
+System.out.println("GUEVARA ESTUVO AQUI");
 nombre = nombreCompleto.substring(0,nombreCompleto.indexOf(espacio));
 apellido = nombreCompleto.substring(nombreCompleto.indexOf(espacio)+1,nombreCompleto.length());
 System.out.println("Nombre Completo: " + nombreCompleto);
