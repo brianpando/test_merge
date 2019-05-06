@@ -23,10 +23,18 @@ public class Persona{
     }
   }
 
+  public String nombreCompleto(){
+
+    JOptionPane.showMessageDialog(null, "Nombre: "+nombre+" Sexo: "+sexo);
+
+  }
+
   //imprimir clase completo
   public String toString() {
       return "nombre: "+this.nombre;
   }
+
+  
 
 }
 
