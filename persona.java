@@ -22,10 +22,13 @@ public class Persona{
       JOptionPane.showMessageDialog(null, "ERES RARITO!!");
     }
   }
+
+  //imprimir clase completo
+  public String toString() {
+      return "nombre: "+this.nombre;
+  }
+
 }
 
-//imprimir clase completo
-public String toString() {
-    return "nombre: "+this.nombre;
-}
+
 
