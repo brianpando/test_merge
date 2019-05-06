@@ -54,10 +54,23 @@ public class Persona{
 
   //imprimir clase completo
   public String toString() {
-      return "nombre: "+this.nombre, "Sexo: "+this.sexo;
+      return "DNI: "+this.dni, "Nombre: "+this.nombre,"Apellido"+ this.apellido,"Sexo: "+this.sexo,
+      "Ciudad: "+this.ciudad, "Fecha de nacimeinto: "+this.fechaNacimiento ;
   }
 
 }
 
 
 
+//imprimir clase completo
+public String toString() {
+    return "nombre: "+this.nombre;
+}
+
+//Agregar persona vecinas
+public void personaVecina(String ves){
+  if(this.vecinas == ves){
+    System.out.println(this.vecinas);
+    
+  }
+}
