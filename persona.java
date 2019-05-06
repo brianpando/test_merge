@@ -55,7 +55,8 @@ public class Persona{
 
   //imprimir clase completo
   public String toString() {
-      return "nombre: "+this.nombre, "Sexo: "+this.sexo;
+      return "DNI: "+this.dni, "Nombre: "+this.nombre,"Apellido"+ this.apellido,"Sexo: "+this.sexo,
+      "Ciudad: "+this.ciudad, "Fecha de nacimeinto: "+this.fechaNacimiento ;
   }
 
 }
