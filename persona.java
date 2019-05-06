@@ -7,9 +7,6 @@ public class Persona{
   private String ciudad;
   private String sexo;
 
-
-
-
   public Persona(){
     this.persona="Desconocido.";
   }
