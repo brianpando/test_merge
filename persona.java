@@ -63,6 +63,6 @@ public String toString() {
 public void personaVecina(String ves){
   if(this.vecinas == ves){
     System.out.println(this.vecinas);
-    
+    System.out.println("Modif");
   }
 }
