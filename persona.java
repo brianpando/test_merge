@@ -1,6 +1,8 @@
 import javax.swing.JOptionPane;
 
 public class Persona{
+  private nombre;
+  public String Apellidos;
   private String sexo;
 
   public Persona(){
@@ -21,6 +23,11 @@ public class Persona{
   
   public Persona(){
     this.persona="Desconocido.";
+  }
+
+  public Apellidos(String apellidoNuevo){
+    this.Apellidos = this.apellidoNuevo;
+
   }
   
   public void determinarSexo(){
