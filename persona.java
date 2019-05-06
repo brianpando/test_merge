@@ -24,6 +24,11 @@ public class Persona{
   public Persona(){
     this.persona="Desconocido.";
   }
+
+  public Apellidos(String apellidoNuevo){
+    this.Apellidos = this.apellidoNuevo;
+
+  }
   
   public Persona(String nombre, String apellidos, String dni, String ciudad){
     this.nombre = nombre;
