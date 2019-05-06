@@ -28,9 +28,7 @@ public class Persona{
         this.fechaNacimiento = fechaNacimiento;
   	
   }
-
-
-
+  
   private String nombre;
   private String sexo;
 
