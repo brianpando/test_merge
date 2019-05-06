@@ -119,4 +119,6 @@ public void personaVecina(String ves){
     
   }
 >>>>>>> 60b559f746bae0adb605eb2ac788efc782a4e2e4
+
+:wq
 }
