@@ -131,3 +131,8 @@ public void personaVecina(String ves){
     System.out.println("Modif");
   }
 }
+// agregar porsona Constructor
+public void personaConstructor(String Cons ){
+if(this.Constructor == Cons )
+System.out.println(this.Constructor)
+}
