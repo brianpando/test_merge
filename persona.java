@@ -7,9 +7,6 @@ public class Persona{
   private String ciudad;
   private String sexo;
 
-
-
-
   public Persona(){
     this.persona="Desconocido.";
   }
@@ -39,7 +36,9 @@ public class Persona{
 
   public void nombreCompleto (){
   	return "Nombre completo: "+this.nombre+" "+this.apellido;
-  public Apellidos(String apellidoNuevo){
+  
+  
+  public Apellidos(String apellidoNuev){
     this.Apellidos = this.apellidoNuevo;
 
   }
@@ -63,7 +62,6 @@ public class Persona{
         || (months==0 && days < 0)) { // o es el mes pero no ha llegado el día.
         years--;
     }
-
     return years;
   }
 
@@ -130,6 +128,6 @@ return respuesta;
 public void personaVecina(String ves){
   if(this.vecinas == ves){
     System.out.println(this.vecinas);
-    
+    System.out.println("Modif");
   }
 }
