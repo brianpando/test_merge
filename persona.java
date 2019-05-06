@@ -65,7 +65,6 @@ public class Persona{
         || (months==0 && days < 0)) { // o es el mes pero no ha llegado el día.
         years--;
     }
-
     return years;
   }
 
