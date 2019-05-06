@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import java.util.calendar;
 import java.util.GregorianCalendar;
+=======
+import javax.swing.JOptionPane;
+>>>>>>> 1751cfc2535b153dbc81cbe41360bad92549e326
 
 public class Persona{
   private String nombre;
@@ -8,18 +12,15 @@ public class Persona{
   private String ciudad;
   private String sexo;
 
-
-
-
   public Persona(){
     this.persona="Desconocido.";
   }
-
 
   public Persona(String dni,String nombre,String apellido,String ciudad,String fechaNacimiento,String sexo)
         this.sexo="s/n";
   	
   }
+  
   public Persona(String dni,String nombre,String apellido
   ,String ciudad,String fechaNacimiento)
         this.nombre = nombre;
@@ -30,8 +31,6 @@ public class Persona{
   	
   }
 
-
-
   private String nombre;
   private String sexo;
 
@@ -40,13 +39,15 @@ public class Persona{
     this.persona="Desconocido.";
   }
 
-  public Apellidos(String apellidoNuevo){
+  public void nombreCompleto (){
+  	return "Nombre completo: "+this.nombre+" "+this.apellido;
+  
+  
+  public Apellidos(String apellidoNuev){
     this.Apellidos = this.apellidoNuevo;
 
   }
   
-<<<<<<< HEAD
-<<<<<<< HEAD
   //@Jhil
   public class int calcularEdad(String fechaNacimiento){
     String dias = fechaNacimiento.substring(0,1);
@@ -66,12 +67,9 @@ public class Persona{
         || (months==0 && days < 0)) { // o es el mes pero no ha llegado el día.
         years--;
     }
-
     return years;
   }
 
-=======
-=======
   public Persona(String nombre, String apellidos, String dni, String ciudad){
     this.nombre = nombre;
     this.apellidos = apellidos;
@@ -79,7 +77,7 @@ public class Persona{
     this.ciudad = ciudad;
 
   }
->>>>>>> c2846c6ec3ef3d5ed130602fe5ddc90cb07e7e0f
+
   public void determinarSexo(){
 
     JOptionPane.showMessageDialog(null, "Determinar el sexo de una persona");
@@ -95,6 +93,12 @@ public class Persona{
     }
   }
 
+  public String nombreCompleto(){
+
+    JOptionPane.showMessageDialog(null, "Nombre: "+nombre+" Sexo: "+sexo);
+
+  }
+
   //imprimir clase completo
   public String toString() {
       return "DNI: "+this.dni, "Nombre: "+this.nombre,"Apellido"+ this.apellido,"Sexo: "+this.sexo,
@@ -103,11 +107,46 @@ public class Persona{
 
 }
 
+//JESSE
+import java.util.Scanner;
+
+boolean CalcularMayorEdad(){
+boolean respuesta;
+Scanner dato = new Scanner(System.in);
+int edad=0;
+System.out.printl("ALANYA ESTUVO AQUII!!/n");
+
+System.out.println("ingrese su edad: ");
+edad = dato.nextInt();
+if(edad<18){
+JOptionPane.showMessageDialog(null, "Es menor de edad ");
+respuesta=false;
+else
+  {JOptionPane.showMessageDialog(null, "Es mayor de edad");
+   respuesta=true;}
+
+return respuesta;
+}
+
+//ALANYA
+String nombreCompleto, nombre, apellido, espacio;
+nombreCompleto = "Shaoran Da Silva";
+espacio = " ";
+nombre = nombreCompleto.substring(0,nombreCompleto.indexOf(espacio));
+apellido = nombreCompleto.substring(nombreCompleto.indexOf(espacio)+1,nombreCompleto.length());
+System.out.println("Nombre Completo: " + nombreCompleto);
+System.out.println("Nombre: " + nombre);System.out.println("Apellido: " + apellido);System.out.println("Su apellido tiene " + apellido.length() + " 
+letras");
+
 //Agregar persona vecinas
 public void personaVecina(String ves){
   if(this.vecinas == ves){
     System.out.println(this.vecinas);
-    
+    System.out.println("Modif");
   }
->>>>>>> 60b559f746bae0adb605eb2ac788efc782a4e2e4
+}
+// agregar porsona Constructor
+public void personaConstructor(String Cons ){
+if(this.Constructor == Cons )
+System.out.println(this.Constructor)
 }
