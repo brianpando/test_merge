@@ -25,7 +25,7 @@ public class Persona{
 
   //imprimir clase completo
   public String toString() {
-      return "nombre: "+this.nombre;
+      return "nombre: "+this.nombre, "Sexo: "+this.sexo;
   }
 
 }
