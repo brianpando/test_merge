@@ -39,7 +39,7 @@ public class Persona{
 
   public void nombreCompleto (){
   	return "Nombre completo: "+this.nombre+" "+this.apellido;
-  public Apellidos(String apellidoNuevo){
+  public Apellidos(String apellidoNuev){
     this.Apellidos = this.apellidoNuevo;
 
   }
