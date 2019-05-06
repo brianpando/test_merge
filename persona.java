@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 import java.util.calendar;
 import java.util.GregorianCalendar;
-=======
-import javax.swing.JOptionPane;
->>>>>>> 60b559f746bae0adb605eb2ac788efc782a4e2e4
 
 public class Persona{
   private String nombre;
