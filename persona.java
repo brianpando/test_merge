@@ -1,5 +1,3 @@
-import java.util.calendar;
-import java.util.GregorianCalendar;
 import javax.swing.JOptionPane;
 
 public class Persona{
@@ -30,9 +28,7 @@ public class Persona{
         this.fechaNacimiento = fechaNacimiento;
   	
   }
-
-
-
+  
   private String nombre;
   private String sexo;
 
@@ -98,6 +94,12 @@ public class Persona{
     }
   }
 
+  public String nombreCompleto(){
+
+    JOptionPane.showMessageDialog(null, "Nombre: "+nombre+" Sexo: "+sexo);
+
+  }
+
   //imprimir clase completo
   public String toString() {
       return "DNI: "+this.dni, "Nombre: "+this.nombre,"Apellido"+ this.apellido,"Sexo: "+this.sexo,
@@ -113,4 +115,6 @@ public void personaVecina(String ves){
     
   }
 >>>>>>> 60b559f746bae0adb605eb2ac788efc782a4e2e4
+
+:wq
 }
