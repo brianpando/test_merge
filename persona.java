@@ -12,16 +12,21 @@ public class Persona{
         this.sexo="s/n";
   	
   }
-
+  public Persona(String dni,String nombre,String apellido
+  ,String ciudad,String fechaNacimiento)
+        this.nombre = nombre;
+        this.dni = dni;
+        this.apellido = apellido;
+        this.ciudad = ciudad;
+        this.fechaNacimiento = fechaNacimiento;
+  	
+  }
 
 
 
   private String nombre;
   private String sexo;
   
-  public Persona(){
-    this.persona="Desconocido.";
-  }
   
   public void determinarSexo(){
 
