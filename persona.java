@@ -22,6 +22,10 @@ public class Persona{
   public Persona(){
     this.persona="Desconocido.";
   }
+
+  public void nombreCompleto (){
+  	return "Nombre completo: "+this.nombre+" "+this.apellido;
+  }
   
   public void determinarSexo(){
 
