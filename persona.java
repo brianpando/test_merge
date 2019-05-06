@@ -1,6 +1,8 @@
 import javax.swing.JOptionPane;
 
 public class Persona{
+  private nombre;
+  public String Apellidos;
   private String sexo;
 
   public Persona(){
@@ -27,6 +29,14 @@ public class Persona{
   private String nombre;
   private String sexo;
   
+  public Persona(){
+    this.persona="Desconocido.";
+  }
+
+  public Apellidos(String apellidoNuevo){
+    this.Apellidos = this.apellidoNuevo;
+
+  }
   
   public void determinarSexo(){
 
@@ -52,3 +62,15 @@ public class Persona{
 
 
 
+//imprimir clase completo
+public String toString() {
+    return "nombre: "+this.nombre;
+}
+
+//Agregar persona vecinas
+public void personaVecina(String ves){
+  if(this.vecinas == ves){
+    System.out.println(this.vecinas);
+    
+  }
+}
