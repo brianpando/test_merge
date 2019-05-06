@@ -39,14 +39,11 @@ public class Persona{
     this.persona="Desconocido.";
   }
 
-<<<<<<< HEAD
   public void nombreCompleto (){
   	return "Nombre completo: "+this.nombre+" "+this.apellido;
-=======
   public Apellidos(String apellidoNuevo){
     this.Apellidos = this.apellidoNuevo;
 
->>>>>>> bdfef540734ce812c937c991b4c3440a6811eb6d
   }
   
 <<<<<<< HEAD
@@ -110,8 +107,6 @@ public class Persona{
       return "DNI: "+this.dni, "Nombre: "+this.nombre,"Apellido"+ this.apellido,"Sexo: "+this.sexo,
       "Ciudad: "+this.ciudad, "Fecha de nacimeinto: "+this.fechaNacimiento ;
   }
-
-  
 
 }
 
