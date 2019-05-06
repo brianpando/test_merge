@@ -3,6 +3,21 @@ import javax.swing.JOptionPane;
 public class Persona{
   private nombre;
   public String Apellidos;
+  private String sexo;
+
+  public Persona(){
+    this.persona="Desconocido.";
+  }
+
+
+  public Persona(String dni,String nombre,String apellido,String ciudad,String fechaNacimiento,String sexo)
+        this.sexo="s/n";
+  	
+  }
+
+
+
+
   private String nombre;
   private String sexo;
   
@@ -32,7 +47,7 @@ public class Persona{
 
   //imprimir clase completo
   public String toString() {
-      return "nombre: "+this.nombre;
+      return "nombre: "+this.nombre, "Sexo: "+this.sexo;
   }
 
 }
