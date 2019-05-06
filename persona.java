@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 import java.util.calendar;
 import java.util.GregorianCalendar;
-=======
 import javax.swing.JOptionPane;
->>>>>>> 60b559f746bae0adb605eb2ac788efc782a4e2e4
 
 public class Persona{
   private String nombre;
@@ -44,14 +41,11 @@ public class Persona{
     this.persona="Desconocido.";
   }
 
-<<<<<<< HEAD
   public void nombreCompleto (){
   	return "Nombre completo: "+this.nombre+" "+this.apellido;
-=======
   public Apellidos(String apellidoNuevo){
     this.Apellidos = this.apellidoNuevo;
 
->>>>>>> bdfef540734ce812c937c991b4c3440a6811eb6d
   }
   
 <<<<<<< HEAD
