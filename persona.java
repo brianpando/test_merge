@@ -1,9 +1,14 @@
 import javax.swing.JOptionPane;
 
 public class Persona{
-  private nombre;
-  public String Apellidos;
+  private String nombre;
+  private String apellidos;
+  private String dni;
+  private String ciudad;
   private String sexo;
+
+
+
 
   public Persona(){
     this.persona="Desconocido.";
@@ -15,11 +20,6 @@ public class Persona{
   	
   }
 
-
-
-
-  private String nombre;
-  private String sexo;
   
   public Persona(){
     this.persona="Desconocido.";
@@ -30,6 +30,13 @@ public class Persona{
 
   }
   
+  public Persona(String nombre, String apellidos, String dni, String ciudad){
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+    this.dni = dni;
+    this.ciudad = ciudad;
+
+  }
   public void determinarSexo(){
 
     JOptionPane.showMessageDialog(null, "Determinar el sexo de una persona");
