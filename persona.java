@@ -120,10 +120,6 @@ else
 return respuesta;
 }
 
-
-
-
-
 //Agregar persona vecinas
 public void personaVecina(String ves){
   if(this.vecinas == ves){
